@@ -1,229 +1,265 @@
-*{
-  padding: 0;
-  margin: 0;
-  border: 0;
- }
- *,*:before,*:after{
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
- }
- :focus,:active{outline: none;}
- a:focus,a:active{outline: none;}
- 
- nav,footer,header,aside{display: block;}
- 
- html,body{
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
- }
- input,button,textarea{font-family:inherit;}
- 
- input::-ms-clear{display: none;}
- button{cursor: pointer;}
- button::-moz-focus-inner {padding:0;border:0;}
- a, a:visited{text-decoration: none;}
- a:hover{text-decoration: none;}
- ul li{list-style: none;}
- img{vertical-align: top;}
- 
- h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
- /*--------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
- @font-face {
-  font-family: Montserrat-Light; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-Light.ttf); /* Путь к файлу со шрифтом */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-@font-face {
-  font-family: Montserrat-Regular; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-Regular.ttf); /* Путь к файлу со шрифтом */
+
+:focus, :active {
+    outline: none;
 }
-@font-face {
-  font-family: Montserrat-SemiBold; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf); /* Путь к файлу со шрифтом */
+
+a:focus, a:active {
+    outline: none;
 }
-@font-face {
-  font-family: Montserrat-Bold; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-Bold.ttf); /* Путь к файлу со шрифтом */
+
+nav, footer, header, aside {
+    display: block;
 }
-@font-face {
-  font-family: Montserrat-Black; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-Black.ttf); /* Путь к файлу со шрифтом */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
-@font-face {
-  font-family: Montserrat-Medium; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+
+input, button, textarea {
+    font-family: inherit;
 }
-@font-face {
-  font-family: Montserrat-ExtraLight; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf); /* Путь к файлу со шрифтом */
+
+input::-ms-clear {
+    display: none;
 }
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
 
 .container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 
 .header-main {
-  background: #162e44;
+    background: #162e44;
 }
-.header-aside-wrapper{
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
+
+.header-aside-wrapper {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
-.header__logo{
-  display: flex;
-  align-items: center;
+
+.header__logo {
+    display: flex;
+    align-items: center;
 }
-.logo-img-container{
-  width: 50px;
-  height: 50px;
-  margin-right: 8px;
+
+.logo-img-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
 }
+
 .logo-img-container img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-.logo-text{
-  font-family: Montserrat-SemiBold;
-  letter-spacing: .05em;
-  font-size: 1.8rem;
-  color: #162e44;
+.logo-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    letter-spacing: .05em;
+    font-size: 1.8rem;
+    color: #162e44;
 }
-.header__logo:hover .logo-text{
-  color: #01b3a7;
+
+.header__logo:hover .logo-text {
+    color: #01b3a7;
 }
-.header__right-side{
-  display: flex;
-  align-items: center;
+
+.header__right-side {
+    display: flex;
+    align-items: center;
 }
-.header__info-wrapper{
-  display: flex;
-  margin-right: 65px;
+
+.header__info-wrapper {
+    display: flex;
+    margin-right: 65px;
 }
-.header__work-time-wrapper{
-  display: flex;
-  margin-right: 25px;
+
+.header__work-time-wrapper {
+    display: flex;
+    margin-right: 25px;
 }
+
 .header__work-time-icon {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-.header__info-svg{
-  line-height: 1;
-  width: 18px;
-  height: 18px;
-  color: #01b3a7;
-  font-family: Montserrat-Bold;
-}
-.header__info-text{
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-family: Montserrat-Medium;
-  color: #151515;
-  line-height: 1;
-  letter-spacing: .075em;
-}
-.header__tel:hover{
-  color: #01b3a7;
-}
-.header__work-time span {
-  font-size: 16px;
-}
-.header__info-separator{
-  width: 1px;
-  background: #e1e1e1;
-  margin-right: 25px;
-}
-.header__number-wrapper{
-  display: flex;
-}
-.header__number-icon{
-  margin-right: 20px;
-}
-.header__logIn-wrapper{
-  position: relative;
-  cursor: pointer;
-  z-index: 0;
-  min-width: 140px;
-  padding: 12px 55px 10px;
-  border: 2px solid #01b3a7;
-  border-color: #01b3a7;
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.header__logIn-wrapper:hover{
-  transition: background .4s .4s, border-color .4s .0s, color .4s .0s;
-  color: #FFF;
-  background-color: #50ba87;
-  border-color: #50ba87;
-}
-.header__logIn-wrapper::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 101%;
-  height: 101%;
-  background: #50ba87;
-  z-index: -1;
-  opacity: 0;
-  transform: scale3d(0.7, 1, 1); 
-  transition: transform 0.42s, opacity 0.42s; 
-}
-.header__logIn-wrapper:hover::before{
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-}
-.header__logIn-text{
-  font-family: Montserrat-Medium;
-  line-height: 1.5;
-  font-size: 16px;
-  text-align: center;
-}
-.header-main{
-  background: #162e44;
-}
-.header__navigation{
-  
-}
-.header__nav-list{
-  display: flex;
-}
-.header__nav-item{
-  display: inline-block;
-  margin-right: 16px;
-}
-.header__nav-link{
-  position: relative;
-  display: inline-block;
-  font-family: Montserrat-Medium;
-  letter-spacing: .05em;
-  color: #FFF;  
-  background: transparent;
-  transition: .25s;
-  z-index: 1;
-  line-height: 1.2;
-  font-size: 16px;
-  padding: 20px 15px;
-}
-.header__nav-item:last-child{
-  margin: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.header__nav-link::before{
-  position: absolute;
+.header__info-svg {
+    line-height: 1;
+    width: 18px;
+    height: 18px;
+    color: #01b3a7;
+}
+
+.header__info-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #151515;
+    line-height: 1;
+    letter-spacing: .075em;
+}
+
+.header__tel:hover {
+    color: #01b3a7;
+}
+
+.header__work-time span {
+    font-size: 16px;
+}
+
+.header__info-separator {
+    width: 1px;
+    background: #e1e1e1;
+    margin-right: 25px;
+}
+
+.header__number-wrapper {
+    display: flex;
+}
+
+.header__number-icon {
+    margin-right: 20px;
+}
+
+.header__logIn-wrapper {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    min-width: 140px;
+    padding: 12px 55px 10px;
+    border: 2px solid #01b3a7;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.header__logIn-wrapper:hover {
+    transition: background .4s .4s, border-color .4s .0s, color .4s .0s;
+    color: #FFF;
+    background-color: #50ba87;
+    border-color: #50ba87;
+}
+
+.header__logIn-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    background: #50ba87;
+    z-index: -1;
+    opacity: 0;
+    transform: scale3d(0.7, 1, 1);
+    transition: transform 0.42s, opacity 0.42s;
+}
+
+.header__logIn-wrapper:hover::before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+
+.header__logIn-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header-main {
+    background: #162e44;
+}
+
+.header-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.header__nav-link {
+    position: relative;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    letter-spacing: .05em;
+    color: #FFF;
+    background: transparent;
+    transition: .25s;
+    z-index: 1;
+    line-height: 1.2;
+    font-size: 16px;
+    padding: 20px 15px;
+}
+
+.header__nav-item:last-child {
+    margin: 0;
+}
+
+.header__nav-link::before {
+    position: absolute;
     content: '';
     top: 0;
     left: 0;
@@ -237,26 +273,43 @@
     opacity: 0;
     z-index: -1;
 }
-.active-link::before{
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
-  transform: translate3d(0, 0, 0);
-  transition-delay: 0s, .2s;
-}
-.header__nav-link:hover{
-  background: rgba(255, 255, 255, 0.11);
-  transition: all ease 0.35s;
-}
-.header__nav-link:hover::before{
-  opacity: 1;
-  visibility: visible;
-  transform: translate3d(0,0,0);
-}
-.header__facebook:hover{
-  fill:#50ba87;
+
+.active-link::before {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0s, .2s;
 }
 
-.header__social-link:hover + path {
-  fill:chocolate
+.header__nav-link:hover {
+    background: rgba(255, 255, 255, 0.11);
+    transition: all ease 0.35s;
+}
+
+.header__nav-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.header__social-link:hover path {
+    fill: #01b3a7
+}
+
+.header__social-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__social-list {
+    display: flex;
+}
+
+.header__social-item {
+    margin-right: 20px;
+}
+
+.header__social-item:last-child {
+    margin: 0;
 }
